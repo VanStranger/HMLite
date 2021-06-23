@@ -1,0 +1,19 @@
+{
+    "name": "vanstranger/hongmeng",
+    "description": "May I can do sth.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "成功那么难吗",
+            "email": "fanjunjiei@126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Hongmeng\\":"src/Hongmeng/"
+        }
+    }
+}

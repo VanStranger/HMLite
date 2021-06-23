@@ -1,10 +1,6 @@
 <?php
-
-    $scripts=[];
-    function addCallable($script){
-      global $scripts;
-      $scripts[]=$script;
-    }
+    include "../vendor/autoload.php";
+    use \Hongmeng\Hongmeng;
     if (!function_exists('blockhtml')) {
       function blockhtml($fun,$newfun) {
           if(function_exists($fun)){
@@ -46,8 +42,4 @@
 </body>
 </html>
 <?php
-foreach ($scripts as $key => $script) {
-    if(is_callable($script)){
-        $script();
-    }
-}
+Hongmeng::showScripts();
